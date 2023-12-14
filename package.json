@@ -1,18 +1,31 @@
 {
-    "name": "solved",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.17.1",
-        "inquirer": "^9.2.12",
-        "mysql2": "^2.2.5",
-        "node": "^21.2.0",
-        "nodemon": "^3.0.2"
-    }
+  "name": "yet-another-business-planner",
+  "version": "1.0.0",
+  "description": "Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called **content management systems (CMS)**. Your assignment this week is to build a command-line application from scratch to manage a company's carltondatabase, using Node.js, Inquirer, and MySQL.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "mysql db/carlton.db < db/schema.sql",
+    "seed": "mysql db/carlton.db < db/seeds.sql",
+    "db": "mysql db/carlton.db",
+    "watch": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Dakota Wentz",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.6.5",
+    "nodemon": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dakotawentz/yet-another-business-planner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dakotawentz/yet-another-business-planner/issues"
+  },
+  "homepage": "https://github.com/dakotawentz/yet-another-business-planner#readme"
 }

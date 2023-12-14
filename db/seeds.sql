@@ -7,12 +7,13 @@ INSERT INTO departments (department_name) VALUES
     ('Human Resources');
 
 -- create roles
-INSERT INTO roles (role_title, salary, department_id) VALUES
+INSERT INTO roles (title, salary, department_id) VALUES
     ('Sales Associate', 50000, 1),
     ('Marketing Specialist', 55000, 2),
     ('Financial Analyst', 60000, 3),
     ('Software Developer', 70000, 4),
     ('HR Manager', 65000, 5);
+
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES
     ('John', 'Doe', 1, NULL),
